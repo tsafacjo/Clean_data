@@ -32,7 +32,7 @@ data_clean = data_clean.replace("\n },", "}\n")
 new_data=[]
 for i, line in enumerate(data_clean.split('\n')[1:]):
     
-    current_line =('{"index":{"_index": "athletesjo%d","_type":"athlete","_id":%d}}\n{ "fields" :'+line+'}')%(i+1,i+1)
+    current_line =('{"index":{"_index": "athletesjo1","_type":"athlete","_id":%d}}\n{ "fields" :'+line+'}')%(i+1)
     new_data.append(current_line)
    # print(i)
     
